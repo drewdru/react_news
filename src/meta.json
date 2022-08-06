@@ -1,0 +1,70 @@
+{
+  "name": "react_news",
+  "plugins": [
+    {
+      "name": "React-Bootstrap",
+      "description": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit.",
+      "url": "https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+    },
+    {
+      "name": "Styled Components",
+      "description": "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components.",
+      "url": "https://styled-components.com/docs"
+    },
+    {
+      "name": "Styled System",
+      "description": "Styled System is a collection of utility functions that add style props to your React components and allows you to control styles based on a global theme object with typographic scales, colors, and layout properties.",
+      "url": "https://styled-system.com/getting-started"
+    },
+    {
+      "name": "Axios",
+      "description": "Promise based HTTP client for the browser and node.js.",
+      "url": "https://github.com/axios/axios"
+    },
+    {
+      "name": "Environment Variables",
+      "description": "Use environment variables in your react project for server side, client or both.",
+      "url": "https://create-react-app.dev/docs/adding-custom-environment-variables/"
+    },
+    {
+      "name": "react-use",
+      "description": "A Collection of useful React hooks.",
+      "url": "https://github.com/streamich/react-use"
+    },
+    {
+      "name": "React Redux",
+      "description": "Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.",
+      "url": "https://redux.js.org/introduction/getting-started"
+    },
+    {
+      "name": "RTK Query",
+      "description": "RTK Query is a powerful data fetching and caching tool",
+      "url": "https://redux-toolkit.js.org/rtk-query/overview"
+    },
+    {
+      "name": "next-i18next",
+      "description": "react-i18next is a powerful internationalization framework for React / React Native which is based on i18next. Check out the history of i18next and when react-i18next was introduced.",
+      "url": "https://react.i18next.com"
+    },
+    {
+      "name": "eslint",
+      "description": "",
+      "url": ""
+    },
+    {
+      "name": "Testing Library",
+      "description": "The React Testing Library is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils.",
+      "url": "https://testing-library.com/docs/"
+    },
+    {
+      "name": "Docker",
+      "description": "",
+      "url": ""
+    },
+    {
+      "name": "Github Actions",
+      "description": "GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub.",
+      "url": "https://docs.github.com/en/actions"
+    }
+  ]
+}
