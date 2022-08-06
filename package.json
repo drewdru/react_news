@@ -2,6 +2,12 @@
   "name": "react_news",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
@@ -26,11 +32,12 @@
     "i18next": "^20.2.2",
     "react-i18next": "^11.8.15"
   },
-  "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@types/styled-system": "^5.1.11",
+    "nock": "^13.0.11",
+    "@types/react-redux": "^7.1.16",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6"
   },
   "eslintConfig": {
     "extends": [
@@ -49,13 +56,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/styled-system": "^5.1.11",
-    "nock": "^13.0.11",
-    "@types/react-redux": "^7.1.16",
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6"
   },
   "resolutions": {
     "styled-components": "^5"

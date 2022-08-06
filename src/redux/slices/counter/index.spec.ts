@@ -1,3 +1,4 @@
+import { AnyAction } from 'redux'
 import Counter, { decrease, increase } from "./index";
 
 describe("Redux Counter Reducer", () => {
@@ -5,7 +6,10 @@ describe("Redux Counter Reducer", () => {
     const initial = {
       count: 0,
     };
-    const reducer = Counter(initial, {});
+    const action: AnyAction = {
+      type: Number
+    };
+    const reducer = Counter(initial, action);
     expect(reducer).toEqual(initial);
   });
   it("increase action should increase counter by 1", () => {

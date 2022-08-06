@@ -1,26 +1,27 @@
+import { screen } from '@testing-library/react';
 import { render } from "test";
 
 import { Main } from "./index";
 
 describe("Main component testing with testing-library", () => {
   it("renders without crashing", () => {
-    const component = render(<Main />);
+    const view = render(<Main />);
 
-    expect(component).toBeTruthy();
+    expect(view).toBeTruthy();
   });
 
   it("renders texts successfuly", () => {
-    const { getByText } = render(<Main />);
+    render(<Main />);
 
-    getByText("superplate");
-    getByText(
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    screen.getByText("superplate");
+    screen.getByText(
+      "The frontend boilerplate with superpowers!"
     );
   });
 
   it("renders button successfuly", () => {
-    const { getByText } = render(<Main />);
+    render(<Main />);
 
-    getByText("Docs");
+    screen.getByText("Docs");
   });
 });
