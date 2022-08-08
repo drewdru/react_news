@@ -1,7 +1,7 @@
 import React from "react";
 import Moment from 'moment';
 import { useAppDispatch } from "redux/store";
-import { Form, InputGroup, Row, Col, Container, Card } from "react-bootstrap";
+import { Row, Col, Container, Card } from "react-bootstrap";
 import { createSearchParams, useSearchParams, useNavigate } from "react-router-dom";
 import Pagination from '@vlsergey/react-bootstrap-pagination';
 import Badge from "react-bootstrap/Badge";
@@ -63,7 +63,6 @@ export const NewsCards: React.FC = () => {
             md={4}
             key={article._id}
             className="mb-3"
-            data-testid="container"
           >
             <Card className="border-none">
               <Card.Body>

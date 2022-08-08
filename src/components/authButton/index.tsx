@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { RootState } from "redux/reducers";
 import { useSelector } from "react-redux";
-import { Logo } from "components";
 import { AuthGroup } from "./styled"
 import { Button } from "react-bootstrap";
 

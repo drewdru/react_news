@@ -12,16 +12,16 @@ describe("Footer component testing with testing-library", () => {
 
   it("renders pankod logo and directed to the correct url", () => {
     render(<Footer />);
-    const logo = screen.getByTestId("pankod-logo");
+    const logo = screen.getByTestId("drewdru-logo");
 
     expect(logo.getAttribute("href")).toStrictEqual(
-      "https://github.com/pankod"
+      "https://career.drewdru.com/"
     );
   });
 
-  it("should render 4 icons successfully", () => {
+  it("should render 2 icons successfully", () => {
     render(<Footer />);
     const icons = screen.getByTestId("icons-container").childNodes;
-    expect(icons).toHaveLength(4);
+    expect(icons).toHaveLength(2);
   });
 });
