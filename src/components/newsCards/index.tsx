@@ -6,6 +6,7 @@ import { createSearchParams, useSearchParams, useNavigate } from "react-router-d
 import Pagination from '@vlsergey/react-bootstrap-pagination';
 import Badge from "react-bootstrap/Badge";
 import { setMessage, clearMessage } from "redux/slices/message";
+import { ShadowCard } from "components";
 
 import { getNews } from "./index.service";
 
@@ -64,7 +65,7 @@ export const NewsCards: React.FC = () => {
             key={article._id}
             className="mb-3"
           >
-            <Card className="border-none">
+            <ShadowCard className="border-none">
               <Card.Body>
                 <Card.Link rel="noopener noreferrer" target="_blank" href={article.link}>
                   <Card.Title>{article.title}</Card.Title>
@@ -79,7 +80,7 @@ export const NewsCards: React.FC = () => {
                 </Card.Text>
                 <Card.Text>{article.contentSnippet}</Card.Text>
               </Card.Body>
-            </Card>
+            </ShadowCard>
           </Col>
         ))}
       </Row>

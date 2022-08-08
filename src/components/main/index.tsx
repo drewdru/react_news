@@ -11,7 +11,7 @@ export const Main: React.FC = () => {
     <div className="text-center py-4" style={{ backgroundColor: "#282c34" }}>
       <Container>
         <h1 className="display-2 text-white">{t("home.ReactNewsApp")}</h1>
-        <LinkContainer to="/news">
+        <LinkContainer to="/react_news/news">
           <Button
             variant="primary"
             size="lg"

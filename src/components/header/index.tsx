@@ -19,12 +19,12 @@ export const Header: React.FC = () => {
   );
   return (
     <Navbar expand="lg" data-testid="container">
-      <LinkContainer to="/"><Navbar.Brand><Logo/></Navbar.Brand></LinkContainer>
+      <LinkContainer to="/react_news/"><Navbar.Brand><Logo/></Navbar.Brand></LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <LinkContainer to="/"><Nav.Link>{t("header.Home")}</Nav.Link></LinkContainer>
-          <LinkContainer to="/news"><Nav.Link>{t("header.News")}</Nav.Link></LinkContainer>
+          <LinkContainer to="/react_news/"><Nav.Link>{t("header.Home")}</Nav.Link></LinkContainer>
+          <LinkContainer to="/react_news/news"><Nav.Link>{t("header.News")}</Nav.Link></LinkContainer>
         </Nav>
       </Navbar.Collapse>
       <Navbar.Collapse className="justify-content-end">
@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
           }`} title={<AuthButton />} id="basic-nav-dropdown">
             <NavDropdown.ItemText>{t("header.SignedInAs")} <strong>{auth?.user?.email}</strong></NavDropdown.ItemText>
             <NavDropdown.Divider />
-            <LinkContainer to="/profile">
+            <LinkContainer to="/react_news/profile">
               <NavDropdown.Item>{t("header.OpenProfile")}</NavDropdown.Item>
             </LinkContainer>
             <NavDropdown.Divider />
