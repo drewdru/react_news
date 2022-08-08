@@ -1,10 +1,11 @@
 import { combineReducers } from "redux";
 
-import counter from "redux/slices/counter";
+import auth from "redux/slices/auth";
+import message from "redux/slices/message";
 
 import { store } from "./store";
 
-const rootReducer = combineReducers({ counter });
+const rootReducer = combineReducers({ auth, message });
 
 export type RootState = ReturnType<typeof store.getState>;
 

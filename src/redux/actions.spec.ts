@@ -1,14 +1,20 @@
-import { increase, decrease } from "./actions";
+import { signup, signin, signout } from "./slices/auth";
+
 
 describe("Redux Actions", () => {
-  describe("Counter Actions", () => {
-    it("increase should return increase.type", () => {
-      const action = increase();
-      expect(action.type).toBe(increase.type);
+  describe("Auth Actions", () => {
+    const dispatch = jest.fn();
+    it("signup should be an action", async () => {
+      dispatch(signup({email: "Test", password: "123456789"}));
+      expect(dispatch.mock.calls.length).toBe(1);
     });
-    it("decrease should return decrease.type", () => {
-      const action = decrease();
-      expect(action.type).toBe(decrease.type);
+    it("signin should be an action", () => {
+      dispatch(signin({email: "Test", password: "123456789"}));
+      expect(dispatch.mock.calls.length).toBe(1);
+    });
+    it("signout should be an action", () => {
+      dispatch(signout());
+      expect(dispatch.mock.calls.length).toBe(1);
     });
   });
 });

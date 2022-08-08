@@ -1,9 +1,8 @@
 import store from "./store";
 
 describe("Redux Store", () => {
-  it("should create store with counter reducer", () => {
+  it("should create store with auth reducer", () => {
     const currentState = store.getState();
-    expect(currentState).toHaveProperty("rootReducer.counter");
-    expect(currentState).toHaveProperty("pokemonApi");
+    expect(currentState).toHaveProperty("rootReducer.auth");
   });
 });
