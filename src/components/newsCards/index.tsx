@@ -27,10 +27,15 @@ export const NewsCards: React.FC = () => {
     }).toString();
     navigate(`/react_news/news?${queryParams}`);
   }, [navigate, limit, filter]);
-  
+
   React.useEffect(() => {
     const fetchNews = async () => {
       try {
+        // Backend free alternative for dev purpose
+        // yarn add rss-to-json
+        // import { parse } from "rss-to-json";
+        // const CORS_PROXY = `https://cors-anywhere.herokuapp.com/`;
+        // const rss = await parse(CORS_PROXY + 'https://kotaku.com/rss');
         const queryParams: any = { page, limit }
         if(filter !== "") {
           queryParams.filter = filter
