@@ -1,6 +1,21 @@
 import React from "react";
 
 export const Footer: React.FC = () => {
+  const drewdru_logo_white = (
+    process.env.NODE_ENV === "production"
+    ? `${process.env.REACT_APP_IMAGE_PREFIX}icons/drewdru_logo_white.svg`
+    : "/icons/drewdru_logo_white.svg"
+  )
+  const github_icon = (
+    process.env.NODE_ENV === "production"
+    ? `${process.env.REACT_APP_IMAGE_PREFIX}icons/github-icon.svg`
+    : "/icons/github-icon.svg"
+  )
+  const linkedin_icon = (
+    process.env.NODE_ENV === "production"
+    ? `${process.env.REACT_APP_IMAGE_PREFIX}icons/linkedin-icon.svg`
+    : "/icons/linkedin-icon.svg"
+  )
   return (
     <div className="text-center py-4" style={{ marginTop: "1rem", backgroundColor: "#282c34" }}>
       <a
@@ -11,7 +26,7 @@ export const Footer: React.FC = () => {
         data-testid="drewdru-logo"
       >
         <img
-          src="/icons/drewdru_logo_white.svg"
+          src={drewdru_logo_white}
           alt="drewdru"
           width="30"
           height="30"
@@ -32,7 +47,7 @@ export const Footer: React.FC = () => {
             data-testid="github-logo"
           >
             <img
-              src="/icons/github-icon.svg"
+              src={github_icon}
               alt="github"
               width="28"
               height="29"
@@ -48,7 +63,7 @@ export const Footer: React.FC = () => {
             data-testid="linkedin-logo"
           >
             <img
-              src="/icons/linkedin-icon.svg"
+              src={linkedin_icon}
               alt="linkedin"
               width="28"
               height="32"
