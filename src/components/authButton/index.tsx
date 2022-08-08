@@ -21,8 +21,8 @@ export const AuthButton: React.FC = ({ ...rest }) => {
     </AuthGroup>
     :
     <AuthGroup data-testid="btn">
-      <Button variant="outline-primary" onClick={() => navigateTo("/auth/signin")}>{t("auth.SignIn")}</Button>
-      <Button onClick={() => navigateTo("/auth/signup")}>{t("auth.SignUp")}</Button>
+      <Button variant="outline-primary" onClick={() => navigateTo("/react_news/auth/signin")}>{t("auth.SignIn")}</Button>
+      <Button onClick={() => navigateTo("/react_news/auth/signup")}>{t("auth.SignUp")}</Button>
     </AuthGroup>
   );
 };

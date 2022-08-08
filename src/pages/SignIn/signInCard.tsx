@@ -40,7 +40,7 @@ const SignInCard: React.FC = () => {
       await dispatch(signin(data)).unwrap();
       setSuccessful(true);
       reset();
-      navigate(next || "/profile", {replace: true})
+      navigate(next || "/react_news/profile", {replace: true})
     } catch (error) {
       setSuccessful(false);
     }

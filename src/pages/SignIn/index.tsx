@@ -15,7 +15,7 @@ const SignIn: React.FC = () => {
   );
   if (isLoggedIn) {
     // TODO: If user redirect to next from query or to /
-    navigate("/", {replace: true})
+    navigate("/react_news/", {replace: true})
   }
 
   if (tab === "signup") {

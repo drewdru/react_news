@@ -7,7 +7,7 @@ const PrivateRoutes = (): JSX.Element => {
         (state: RootState) => state.rootReducer.auth.isLoggedIn
     );
     return (
-        isLoggedIn ? <Outlet/> : <Navigate to="/auth/login"/>
+        isLoggedIn ? <Outlet/> : <Navigate to="/react_news/auth/login"/>
     );
 };
 

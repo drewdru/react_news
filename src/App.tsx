@@ -22,22 +22,24 @@ function App(): JSX.Element {
   const refreshToken = useSelector(
       (state: RootState) => state.rootReducer.auth.refreshToken
   );
+
   React.useEffect(() => {
     if(refreshToken) {
       dispatch(refreshtoken({ refreshToken }))
     }
   }, [refreshToken, dispatch])
+
   return (
     <StyledThemeProvider>
       <GlobalStyle />
       <Router>
         <DefaultLayout>
           <Routes>
-            <Route element={<Home/>} path="/"/>
-            <Route element={<News/>} path="/news"/>
-            <Route element={<SignIn/>} path="/auth/:tab"/>
+            <Route element={<Home/>} path="/react_news/"/>
+            <Route element={<News/>} path="/react_news/news"/>
+            <Route element={<SignIn/>} path="/react_news/auth/:tab"/>
             <Route element={<PrivateRoutes />}>
-              <Route element={<Profile/>} path="/profile"/>
+              <Route element={<Profile/>} path="/react_news/profile"/>
             </Route>
             {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>

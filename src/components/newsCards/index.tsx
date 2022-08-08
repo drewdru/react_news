@@ -24,7 +24,7 @@ export const NewsCards: React.FC = () => {
       filter,
       page: event.target.value as string,
     }).toString();
-    navigate(`/news?${queryParams}`);
+    navigate(`/react_news/news?${queryParams}`);
   }, [navigate, limit, filter]);
   
   React.useEffect(() => {
