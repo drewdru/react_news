@@ -2,20 +2,21 @@ import React from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <div className="text-center py-4" style={{ backgroundColor: "#282c34" }}>
+    <div className="text-center py-4" style={{ marginTop: "1rem", backgroundColor: "#282c34" }}>
       <a
-        href="https://github.com/pankod"
+        href="https://career.drewdru.com/"
         rel="noreferrer"
         target="_blank"
         className="d-block mb-3"
-        data-testid="pankod-logo"
+        data-testid="drewdru-logo"
       >
         <img
-          src="/icons/pankod-icon.svg"
-          alt="pankod"
-          width="140"
-          height="28"
+          src="/icons/drewdru_logo_white.svg"
+          alt="drewdru"
+          width="30"
+          height="30"
         />
+        <strong className="fs-1 ml-1 text-white">Drew Dru</strong>
       </a>
 
       <ul
@@ -23,36 +24,36 @@ export const Footer: React.FC = () => {
         data-testid="icons-container"
       >
         <li className="mx-2">
-          <img
-            src="/icons/github-icon.svg"
-            alt="github"
-            width="28"
-            height="29"
-          />
+          <a
+            href="https://github.com/drewdru"
+            rel="noreferrer"
+            target="_blank"
+            className="d-block mb-3"
+            data-testid="github-logo"
+          >
+            <img
+              src="/icons/github-icon.svg"
+              alt="github"
+              width="28"
+              height="29"
+            />
+          </a>
         </li>
         <li className="mx-2">
-          <img
-            src="/icons/twitter-icon.svg"
-            alt="twitter"
-            width="28"
-            height="28"
-          />
-        </li>
-        <li className="mx-2">
-          <img
-            src="/icons/youtube-icon.svg"
-            alt="youtube"
-            width="28"
-            height="29"
-          />
-        </li>
-        <li className="mx-2">
-          <img
-            src="/icons/linkedin-icon.svg"
-            alt="linkedin"
-            width="28"
-            height="32"
-          />
+          <a
+            href="https://www.linkedin.com/in/andrew-ovsyannikov-b97479169/"
+            rel="noreferrer"
+            target="_blank"
+            className="d-block mb-3"
+            data-testid="linkedin-logo"
+          >
+            <img
+              src="/icons/linkedin-icon.svg"
+              alt="linkedin"
+              width="28"
+              height="32"
+            />
+          </a>
         </li>
       </ul>
     </div>
