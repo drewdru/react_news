@@ -21,3 +21,9 @@ This project view news.
 ```bash
     yarn start
 ```
+
+### Publish to github pages
+```bash
+    yarn build
+    git subtree push --prefix build origin gh-pages
+```
