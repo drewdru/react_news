@@ -1,17 +1,20 @@
+import { BrowserRouter as Router } from "react-router-dom";
+
+import { screen } from '@testing-library/react';
 import { render } from "test";
 
 import { Header } from "./index";
 
 describe("Header component testing with testing-library", () => {
-  const { getByTestId } = render(<Header />);
-
-  const container = getByTestId("container");
+  render(<Router><Header/></Router>);
+  const container = screen.getByTestId("container");
+  const logo = screen.getByAltText("logo");
 
   it("renders without crashing", () => {
-    expect(container.parentElement).toBeTruthy();
+    expect(container).toBeTruthy();
   });
 
   it("renders successfuly next.js logo", () => {
-    expect(container.firstChild).toBeDefined();
+    expect(logo).toBeDefined();
   });
 });
