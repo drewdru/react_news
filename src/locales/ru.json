@@ -1,0 +1,43 @@
+{
+  "translation": {
+    "home": {
+      "ReactNewsApp": "React News",
+      "GoToNews": "Перейти к новостям"
+    },
+
+    "header": {
+      "SignedInAs": "Вы вошли как",
+      "OpenProfile": "Открыть профиль",
+      "SignOut": "Выйти",
+      "Home": "Главная",
+      "News": "Новости"
+    },
+    "form": {
+      "Submit": "Отправить",
+      "Cancel": "Отмена"
+    },
+    "auth": {
+      "SignIn": "Вход",
+      "SignUp": "Регистрация",
+      "EmailAddress": "Email",
+      "EmailAddressOrUsername": "Email или имя пользователя",
+      "EnterEmail": "Введите email",
+      "Password": "Пароль",
+      "EnterPassword": "Введите пароль",
+      "AlreadyRegistered": "Уже зарегистрированы?",
+      "NotRegisteredYet": "Всё ещё не зарегистрированы?",
+      "ConfirmPassword": "Подтверждение пароля",
+      "Token": "Token",
+      "RefreshToken": "Refresh Token"
+    },
+    "user": {
+      "FirstName": "Имя",
+      "LastName": "Фамилия",
+      "Username": "Имя пользователя",
+      "Gender": "Пол",
+      "Male": "Мужской",
+      "Female": "Женский",
+      "Other": "Другой"
+    }
+  }
+}

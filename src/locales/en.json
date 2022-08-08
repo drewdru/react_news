@@ -1,0 +1,43 @@
+{
+  "translation": {
+    "home": {
+      "ReactNewsApp": "React News",
+      "GoToNews": "Go To News"
+    },
+
+    "header": {
+      "SignedInAs": "Signed in as",
+      "OpenProfile": "Open Profile",
+      "SignOut": "Sign out",
+      "Home": "Home",
+      "News": "News"
+    },
+    "form": {
+      "Submit": "Submit",
+      "Cancel": "Cancel"
+    },
+    "auth": {
+      "SignIn": "Sign in",
+      "SignUp": "Sign up",
+      "EmailAddress": "Email address",
+      "EmailAddressOrUsername": "Email address or username",
+      "EnterEmail": "Enter email",
+      "Password": "Password",
+      "EnterPassword": "Enter password",
+      "AlreadyRegistered": "Already registered?",
+      "NotRegisteredYet": "Not registered yet?",
+      "ConfirmPassword": "Confirm Password",
+      "Token": "Token",
+      "RefreshToken": "Refresh Token"
+    },
+    "user": {
+      "FirstName": "First Name",
+      "LastName": "Last Name",
+      "Username": "Username",
+      "Gender": "Gender",
+      "Male": "Male",
+      "Female": "Female",
+      "Other": "Other"
+    }
+  }
+}
