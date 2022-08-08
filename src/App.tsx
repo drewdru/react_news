@@ -1,19 +1,48 @@
+import React from "react";
+import { RootState } from "redux/reducers";
+import { useSelector } from "react-redux";
+import { useAppDispatch } from "redux/store";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { StyledThemeProvider } from "definitions/styled-components";
-import { Provider } from "react-redux";
-import store from "redux/store";
+import GlobalStyle from './styles/globalStyles';
 import "./i18n";
+import PrivateRoutes from './utils/PrivateRoutes'
 
-import Home from "pages";
+import { DefaultLayout } from "layouts";
+
+import Home from "pages/Home";
+import SignIn from "pages/SignIn";
+import News from "pages/News";
+import Profile from "pages/Profile";
+import { refreshtoken } from "redux/slices/auth";
 
 function App(): JSX.Element {
+  const dispatch = useAppDispatch();
+  const refreshToken = useSelector(
+      (state: RootState) => state.rootReducer.auth.refreshToken
+  );
+  React.useEffect(() => {
+    if(refreshToken) {
+      dispatch(refreshtoken({ refreshToken }))
+    }
+  }, [refreshToken, dispatch])
   return (
     <StyledThemeProvider>
-      <Provider store={store}>
-        <div className="App">
-          <Home />
-        </div>
-      </Provider>
+      <GlobalStyle />
+      <Router>
+        <DefaultLayout>
+          <Routes>
+            <Route element={<Home/>} path="/"/>
+            <Route element={<News/>} path="/news"/>
+            <Route element={<SignIn/>} path="/auth/:tab"/>
+            <Route element={<PrivateRoutes />}>
+              <Route element={<Profile/>} path="/profile"/>
+            </Route>
+            {/* <Route path="*" element={<NotFound />} /> */}
+          </Routes>
+        </DefaultLayout>
+      </Router>
     </StyledThemeProvider>
   );
 }
