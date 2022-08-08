@@ -15,13 +15,13 @@ describe("Main component testing with testing-library", () => {
 
     screen.getByText("superplate");
     screen.getByText(
-      "The frontend boilerplate with superpowers!"
+      "hello"
     );
   });
 
   it("renders button successfuly", () => {
     render(<Main />);
 
-    screen.getByText("Docs");
+    screen.getByText("documentation");
   });
 });
