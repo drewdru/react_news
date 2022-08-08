@@ -215,7 +215,9 @@ module.exports = function (webpackEnv) {
       chunkFilename: isEnvProduction
         ? 'react_news/static/js/[name].[contenthash:8].chunk.js'
         : isEnvDevelopment && 'static/js/[name].chunk.js',
-      assetModuleFilename: 'static/media/[name].[hash][ext]',
+      assetModuleFilename: isEnvProduction
+        ? 'react_news/static/media/[name].[hash][ext]'
+        : 'static/media/[name].[hash][ext]',
       // webpack uses `publicPath` to determine where the app is being served from.
       // It requires a trailing slash, or the file assets will get an incorrect path.
       // We inferred the "public path" (such as / or /my-project) from homepage.
