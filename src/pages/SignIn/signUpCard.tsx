@@ -46,7 +46,7 @@ const SignUpCard: React.FC = () => {
         <Card.Title className="text-center"><h3>{t("auth.SignUp")}</h3></Card.Title>
         <Card.Text className="text-center">
           {t("auth.NotRegisteredYet")}{" "}
-          <Link to="/auth/signin">{t("auth.SignIn")}</Link>
+          <Link to="/react_news/auth/signin">{t("auth.SignIn")}</Link>
         </Card.Text>
         <Form onSubmit={handleSubmit(onSignUp)}>
           <FormGroup>

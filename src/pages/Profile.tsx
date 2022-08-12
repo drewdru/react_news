@@ -69,7 +69,7 @@ const Home: React.FC = () => {
               </Form.Row>
             </FormGroup>
             <FormGroup>
-              <FormLabel>{t("auth.FirstName")}</FormLabel>
+              <FormLabel>{t("user.FirstName")}</FormLabel>
               <FormControl
                 required
                 type="text"
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
               />
             </FormGroup>
             <FormGroup>
-              <FormLabel>{t("auth.LastName")}</FormLabel>
+              <FormLabel>{t("user.LastName")}</FormLabel>
               <FormControl
                 required
                 type="text"
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
               />
             </FormGroup>
             <FormGroup>
-              <FormLabel>{t("auth.Username")}</FormLabel>
+              <FormLabel>{t("user.Username")}</FormLabel>
               <FormControl
                 required
                 type="text"

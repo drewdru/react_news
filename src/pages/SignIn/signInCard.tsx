@@ -52,7 +52,7 @@ const SignInCard: React.FC = () => {
         <Card.Title className="text-center"><h3>{t("auth.SignIn")}</h3></Card.Title>
         <Card.Text className="text-center">
           {t("auth.AlreadyRegistered")}{" "}
-          <Link to="/auth/signup">{t("auth.SignUp")}</Link>
+          <Link to="/react_news/auth/signup">{t("auth.SignUp")}</Link>
         </Card.Text>
         <Form onSubmit={handleSubmit(onSignIn)}>
           <FormGroup>
